@@ -177,7 +177,7 @@ function printOut(params) {
 
 // printOut(3)
 
-function grid() {}
+function grid() { }
 /**
  * 9. Iterate over Arrays
  */
@@ -185,13 +185,13 @@ function grid() {}
 function iterateOverArrays(array) {
   var total = 0
   for (let i = 0; i < array.length; i++) {
-    total +=array[i]
+    total += array[i]
     console.log(`Peter earned $${array[i]} today!`);
   }
   console.log(`Total Peter earned $${total} this fist-half month`)
 
   for (let i = 0; i < 240; i++) {
-    var estEarning = (Math.floor(Math.random()*3 + 6))
+    var estEarning = (Math.floor(Math.random() * 3 + 6))
     array.push(estEarning)
     total += estEarning
   }
@@ -199,4 +199,23 @@ function iterateOverArrays(array) {
 }
 
 var workingHours = [6, 6, 7, 7, 8, 8, 6, 7, 8, 7];
-iterateOverArrays(workingHours)
+// iterateOverArrays(workingHours)
+
+/**
+ * 10. Truthy/Falsy
+ */
+
+function truthyFalsy() {
+  const one = 1;
+  if (one) {
+    console.log("Is truthy");
+  }
+
+  const zero = 0;
+  if (zero) {
+    console.log("Is truthy");
+  } else {
+    console.log("Isn't truth");
+  }
+}
+truthyFalsy()
