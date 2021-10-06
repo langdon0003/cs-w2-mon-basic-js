@@ -118,9 +118,9 @@ function nthPrime(nth) {
 function captureTime(params) {
   var dateNow = Date.now()
 
-  console.log(dateNow.toString())
+  console.log('In minutes ',dateNow/1000/60)
 }
-// captureTime()
+captureTime()
 
 /**
  * 7. Advanced Random Number
