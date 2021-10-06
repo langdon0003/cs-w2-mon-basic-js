@@ -193,9 +193,9 @@ function iterateOverArrays(array) {
   for (let i = 0; i < 240; i++) {
     var estEarning = (Math.floor(Math.random()*3 + 6))
     array.push(estEarning)
-
+    total += estEarning
   }
-  console.log(array);
+  console.log(`Total Peter earned $${total} this year`)
 }
 
 var workingHours = [6, 6, 7, 7, 8, 8, 6, 7, 8, 7];
